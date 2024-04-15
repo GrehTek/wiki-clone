@@ -71,12 +71,12 @@ searchForm.addEventListener("submit", async (e) => {
 themeToggler.addEventListener("click", () => {
   body.classList.toggle("dark-theme");
   if (body.classList.contains("dark-theme")) {
-    themeToggler.textContent = "Dark";
+    themeToggler.innerHTML = "<i class='fa-solid fa-moon'></i>"
     themeToggler.style.background = "#fff";
     themeToggler.style.color = "#333";
   } else {
-    themeToggler.textContent = "Light";
     themeToggler.style.border = "2px solid #ccc";
     themeToggler.style.color = "#333";
+    themeToggler.innerHTML = "<i class='fa-solid fa-sun'></i>"
   }
 });
